@@ -1,0 +1,22 @@
+<!-- base.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="static/css/Style.css">
+    <title>My Website</title>
+</head>
+<body>
+    <!-- Include the navigation bar -->
+    {% include 'nav.html' %}
+
+     <!-- background -->
+    <img id="background" src="static/img/Background.png">
+
+    <!-- Content for specific pages will go here -->
+    {% block content %}
+    {% endblock %}
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="static/js/JavaScript.js"></script>
+</html>

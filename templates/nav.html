@@ -1,0 +1,46 @@
+<nav class="navbar">
+    <!-- LOGO -->
+    <div><a href="/Home"><img class="logo" src="static/img/Logo.png"></a></div>
+
+
+    <form action="/" method="get">
+        <select name="language">
+            <option value="danish" {% if selected_language == 'danish' %}selected{% endif %}>Danish</option>
+            <option value="english" {% if selected_language == 'english' %}selected{% endif %}>English</option>
+            <option value="estonian" {% if selected_language == 'estonian' %}selected{% endif %}>Estonian</option>
+        </select>
+        <input type="submit" value="Submit">
+    </form>
+
+    <!-- NAVIGATION MENU -->
+    <ul class="nav-links">
+
+        <!-- USING CHECKBOX HACK -->
+        <input type="checkbox" id="checkbox_toggle" />
+        <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+
+        <!-- NAVIGATION MENUS -->
+        <div class="menu">
+            <li>
+                <a href="/Home"><img src="static/img/Home.png"></a>
+                <a class="nav-text" href="/Home">Home</a>
+            </li>
+            <li>
+                <a href="/Game"><img src="static/img/Game.png"></a>
+                <a class="nav-text" href="/Game">Game</a>
+            </li>
+            <li>
+                <a href="/Planets"><img src="static/img/Planets/Earth.png"></a>
+                <a class="nav-text" href="/Planets">Planets</a>
+            </li>
+            <li>
+                <a href="/Galaxies"><img src="static/img/Galaxy.jpg"></a>
+                <a class="nav-text" href="/Galaxies">Galaxies</a>
+            </li>
+            <li>
+                <a href="/Comets"><img src="static/img/Comet.png"></a>
+                <a class="nav-text" href="/Comets">Comets</a>
+            </li>
+        </div>
+    </ul>
+</nav>
